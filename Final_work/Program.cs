@@ -4,7 +4,7 @@
     return Convert.ToInt32(Console.ReadLine());
 }
 
-void FillArray(string[] array1)
+void FillArray1(string[] array1)
 {
     for(int i = 0; i < array1.Length; i++)
     {
@@ -13,9 +13,9 @@ void FillArray(string[] array1)
     }
 }
 
-void PrintArray1(string[] array1)
+void PrintArray(string[] array)
 {
-    Console.WriteLine(String.Join(", ", array1));
+    Console.WriteLine(String.Join(", ", array));
 }
 
 int FindArray2Size(string[] array1)
@@ -46,19 +46,13 @@ void FillArray2(string[] array1, string[] array2)
         }
 }
 
-void PrintArray2(string[] array2)
-{
-    Console.WriteLine(String.Join(", ", array2));
-}
-
-
 int size1 = InputSize("Введите размер массива: ");
 
 string[] array1 = new string[size1];
 
-FillArray(array1);
+FillArray1(array1);
 
-PrintArray1(array1);
+PrintArray(array1);
 
 int size2 = FindArray2Size(array1);
 
@@ -66,7 +60,7 @@ string[] array2 = new string[size2];
 
 FillArray2(array1, array2);
 
-PrintArray2(array2);
+PrintArray(array2);
 
 
 
